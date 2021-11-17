@@ -1,0 +1,69 @@
+<html>
+<head>
+	<script language="javascript">
+
+		var nome = admin;
+		var senha = admin;
+
+		function validar(){
+		var nome= document.getElementById("nome").value;
+		var senha= document.getElementById("senha").value;
+
+		 if (nome = nome && senha = senha) {
+
+		 	
+		 } if (idade == "" && senha == ""){
+		 	alert("dados incorretos");
+		 } 
+	}
+	</script>
+  <title>Login</title>
+  <style>
+       body{
+       	   font-family: Arial, Helvetica, sans-serif;
+       	   background-image: linear-gradient(40deg, cyan, orange);
+       	}
+       	div{
+       	   background-color: rgba(0, 0, 0, 1.0); 
+       	   position: absolute;
+       	   top: 50%;  
+       	   left: 50%;
+       	   transform: translate(-50%,-50%);
+       	   padding: 80px;
+       	   border-radius: 10px;
+       	   color: white;
+       	}
+       	input{
+       	   padding: 15px;
+       	   border: none;
+       	   outline: none;
+       	   font-size: 20px; 
+       	}
+       	button{
+       	   background-color: darkolivegreen;  
+       	   border: none;
+       	   padding: 15px;
+       	   width: 100%;
+       	   border-radius: 10px;
+       	   color: white;
+       	   font-size: 15px;
+       	   cursor: pointer;
+       	}
+       	button :hover{
+       	   background-color: darkolivegreen;
+       	}     
+  </style>
+</head>
+<body>
+	<form action="/index.html" method="post">
+	<div>
+        <h1>Login</h1>
+        <input id="nome" type="text" placeholder="Nome">
+        <br><br>
+        <input id="senha" type="passaword" placeholder="Senha">
+        <br><br>
+        <button type="button" value="Enviar" onclick="validar();">Entrar
+    </div>
+</form>
+</body>	
+</html>
